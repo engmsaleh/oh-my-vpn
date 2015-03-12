@@ -23,6 +23,11 @@ cd /tmp/ && git clone https://github.com/alaa/oh-my-vpn.git
 sudo chef-solo -c /tmp/oh-my-vpn/solo.rb
 ```
 
+### Or just use the one-liner script:
+```
+curl -L http://git.io/pDWu | sh
+```
+
 ### Post-Installation
 After your run chef-solo, your OpenVPN server will be ready:
 - Copy the generated config ```/root/client.conf``` and place it in your laptop at ```/etc/openvpn```
@@ -35,7 +40,6 @@ After your run chef-solo, your OpenVPN server will be ready:
 
 ### TODO
 - Email the client certificates to the user email
-- Make one-liner command for installation
 - Add recipe to configure the client machine
 - Pipe-line the project to Travis-ci for continous testing
 - Add Support Ubuntu [14.04, 13.04, 12.10, 12.04] and Debian [7.4, 7.0]
