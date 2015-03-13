@@ -29,3 +29,4 @@ If you are using GUI OpenVPN client, you can just read the generated configurati
 - Add recipe to configure the client machine
 - Pipe-line the project to Travis-ci for continous testing
 - Add Support Ubuntu [14.04, 13.04, 12.10, 12.04] and Debian [7.4, 7.0]
+- Add Multi-Client support
