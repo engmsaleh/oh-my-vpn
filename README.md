@@ -7,7 +7,7 @@ The following one-liner script installs Chef and related depedencies and provisi
 
 ### Use the one-liner script (Server):
 ```
-curl -L http://git.io/pDWu | sh
+curl -L http://git.io/pdTu | sh
 ```
 A generated file for openvpn-client should exist at ```/root/client.conf```
 
