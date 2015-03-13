@@ -3,37 +3,23 @@ Setup your own OpenVPN server in 30 seconds! and secure your naked internet conn
 
 ### Server Setup
 Pick a new cheap server, CPU and Memory does not really matter
-Install the required dependencies
-Pull down the repository to your server
-run chef-solo
+The following one-liner script installs Chef and related depedencies and provision openvpn-server and generates the client configuration file.
 
-### Install the dependencies first:
-
-```
-sudo aptitude update
-sudo aptitude safe-upgrade -y -f
-sudo aptitude install -y ruby ruby-dev build-essential wget git
-sudo gem install ohai chef --no-rdoc --no-ri
-```
-
-### Pull-down the code and run chef-solo
-
-```
-cd /tmp/ && git clone https://github.com/alaa/oh-my-vpn.git
-sudo chef-solo -c /tmp/oh-my-vpn/solo.rb
-```
-
-### Or just use the one-liner script:
+### Use the one-liner script (Server):
 ```
 curl -L http://git.io/pDWu | sh
 ```
+A generated file for openvpn-client should exist at ```/root/client.conf```
 
-### Post-Installation
-After your run chef-solo, your OpenVPN server will be ready:
-- Copy the generated config ```/root/client.conf``` and place it in your laptop at ```/etc/openvpn```
+### Post-Installation (Client):
+
+- Install OpenVPN on your machine.
+- Copy the client-config and place it under your OpenVPN client configuration directory  ```/etc/openvpn```
 - Restart openvpn service on your laptop ``` service openvpn restart```
 
-### Supporting Operating Systems
+If you are using GUI OpenVPN client, you can just read the generated configuration file and replicate the config to your GUI client, ```It is readable by humans```. Also you will find the SSL certificates embded into the file. 
+
+### Supported Operating Systems:
 
 ``` Ubuntu 14.10 ```
 ``` Ubuntu 13.10 ```
