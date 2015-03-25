@@ -21,8 +21,8 @@ If you are using GUI OpenVPN client, you can just read the generated configurati
 
 ### Supported Operating Systems:
 
-``` Ubuntu 14.10 ```
-``` Ubuntu 13.10 ```
+- ``` Ubuntu 14.10 ```
+- ``` Ubuntu 13.10 ```
 
 ### TODO
 - Email the client certificates to the user email
