@@ -1,5 +1,5 @@
 # Defaults
-default['openvpn']['server']['packages'] = %w(openvpn easy-rsa ufw)
+default['openvpn']['server']['packages'] = %w(openvpn easy-rsa iptables)
 default['openvpn']['server']['port'] = 1194
 default['openvpn']['server']['protocol'] = 'udp'
 default['openvpn']['server']['dev'] = 'tun'
