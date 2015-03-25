@@ -26,7 +26,18 @@ If you are using GUI OpenVPN client, you can just read the generated configurati
 
 ### TODO
 - Email the client certificates to the user email
-- Add recipe to configure the client machine
+- Build Docker image for Server
+- Build Docker image for client and route client connections through the container 
 - Pipe-line the project to Travis-ci for continous testing
-- Add Support Ubuntu [14.04, 13.04, 12.10, 12.04] and Debian [7.4, 7.0]
+- Add Support for other platforms: Ubuntu [14.04, 13.04, 12.10, 12.04] and Debian [7.4, 7.0]
 - Add Multi-Client support
+- Improve the README
+
+#### Contribute
+- Fork and submit pull requests
+- For new features or refactoring make sure all kitchen tests pass on all platforms
+- You can run the tests:
+```
+cd cookbooks/openvpn/
+kitchen verify
+```
