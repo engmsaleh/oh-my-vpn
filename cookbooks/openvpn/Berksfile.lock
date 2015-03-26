@@ -1,9 +1,0 @@
-DEPENDENCIES
-  apt
-  openvpn
-    path: .
-    metadata: true
-
-GRAPH
-  apt (2.7.0)
-  openvpn (0.0.0)

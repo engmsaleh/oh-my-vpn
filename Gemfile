@@ -4,9 +4,8 @@ gem "ohai"
 gem "chef"
 
 group :development do
-  gem "serverspec"
-  gem "berkshelf"
-  gem "kitchen-vagrant"
   gem "test-kitchen"
+  gem "serverspec"
+  gem "kitchen-vagrant"
   gem "kitchen-docker"
 end
