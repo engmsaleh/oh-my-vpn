@@ -37,9 +37,11 @@ After your run chef-solo, your OpenVPN server will be ready:
 
 ``` Ubuntu 14.10 ```
 ``` Ubuntu 13.10 ```
+``` Debian 7.4 ```
+``` Debian 7.6 ```
 
 ### TODO
 - Email the client certificates to the user email
 - Add recipe to configure the client machine
 - Pipe-line the project to Travis-ci for continous testing
-- Add Support Ubuntu [14.04, 13.04, 12.10, 12.04] and Debian [7.4, 7.0]
+- Add Support RPM-based distros and ArchLinux

@@ -8,10 +8,13 @@ provisioner:
 platforms:
   - name: ubuntu-14.10
   - name: ubuntu-13.10
+  - name: debian-7.4
+  - name: debian-7.6
 
 suites:
   - name: openvpn
     run_list:
+      - recipe[apt]
       - recipe[openvpn::default]
       - recipe[openvpn::easyrsa]
     attributes:

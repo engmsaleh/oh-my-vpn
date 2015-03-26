@@ -1,7 +1,11 @@
 attr = node['easyrsa']
 
 execute "bootstraping easy-rsa files" do
-  command "cp -r /usr/share/easy-rsa/ /etc/openvpn"
+  if node['platform'] == 'debian'
+    command "mkdir /etc/openvpn/easy-rsa && cp -r /usr/share/doc/openvpn/examples/easy-rsa/2.0/* /etc/openvpn/easy-rsa/"
+  else
+    command "cp -r /usr/share/easy-rsa/ /etc/openvpn"
+  end
   not_if { ::File.directory? '/etc/openvpn/easy-rsa' }
 end
 

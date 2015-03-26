@@ -1,1 +1,1 @@
-{"run_list":["openvpn::default","openvpn::easyrsa"]}
+{"run_list":["apt::default","openvpn::default","openvpn::easyrsa"]}
